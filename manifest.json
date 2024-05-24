@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Search Reduction",
+  "version": "1.0",
+  "description": "Help you find what you want and buy it at the best price !",
+  "permissions": ["scripting", "tabs", "webNavigation", "activeTab"],
+  "action": {
+    "default_title": "Click Me",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "newBackground.js"
+  },
+
+  "externally_connectable": {
+    "matches": ["file:///C:/Users/admin/Documents/Fishy_final/Fishy-final/datapage.html"]
+  },
+  "content_scripts": [
+    {
+      "matches":["https://www.amazon.fr/*"],
+      "js":["content_page.js"]
+    },
+    {
+    "matches": ["file:///C:/Users/admin/Documents/Fishy_final/Fishy-final/testfake.html"],
+    "js": ["content_fakepage.js"]
+    },
+    {
+      "matches": ["file:///C:/Users/admin/Documents/Fishy_final/Fishy-final/some.html"],
+      "js": ["some.js"]
+    },
+    {
+      "matches": ["file:///C:/Users/admin/Documents/Fishy_final/Fishy-final/datapage.html"],
+      "js": ["datapage.js"]
+    }
+    ]
+  }
+

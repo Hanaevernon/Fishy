@@ -1,0 +1,71 @@
+<img src="https://www.lalibrairie.com/build/images/logo.svg" alt="lalibrairie.com" class="img-fluid"
+  style="flex:0 0 auto; width:15%">
+<div class="container">
+  <h1>Livraison</h1>
+  <p>Veuillez entrer vos informations de livraison.</p>
+  <hr />
+  <div class="form">
+
+    <div class="fields fields--2">
+      <label class="field">
+        <span class="field__label" for="firstname">Prénom</span>
+        <input class="field__input" type="text" id="firstname" value="Jean" />
+      </label>
+      <label class="field">
+        <span class="field__label" for="lastname">Nom</span>
+        <input class="field__input" type="text" id="lastname" value="Dupont" />
+      </label>
+    </div>
+    <label class="field">
+      <span class="field__label" for="address">Adresse</span>
+      <input class="field__input" type="text" id="address" />
+    </label>
+    <label class="field">
+      <span class="field__label" for="country">Pays</span>
+      <select class="field__input" id="country">
+        <option value="fr">France</option>
+        <option value="be">Belgique</option>
+        <option value="sw">Suisse</option>
+        <option value="de">Allemagne</option>
+      </select>
+    </label>
+    <div class="fields fields--3">
+      <label class="field">
+        <span class="field__label" for="zipcode">Code Postal</span>
+        <input class="field__input" type="text" id="zipcode" maxlength="5"/>
+      </label>
+      <label class="field">
+        <span class="field__label" for="city">Ville</span>
+        <input class="field__input" type="text" id="city" />
+      </label>
+    </div>
+    <h1>Paiement</h1>
+    <div class="row gx-3">
+      <label class="field">
+        <span class="field__label">Nom</span>
+        <input class="field__input" type="text" placeholder="Jean Dupont" id="name">
+    </div>
+    <label class="field">
+      <span class="field__label">Numéro de carte</span>
+      <input class="field__input" type="text" placeholder="1234 5678 435678" id="cardnumber" minleng="16" maxlength="16">
+    </label>
+    <div class="fields fields--2">
+      <label class="field">
+        <span class="field__label">Expire le</span>
+        <input class="field__input" type="text" placeholder="MM/AAAA" id="expdate" maxlength="7">
+      </label>
+      <label class="field">
+        <span class="field__label">CVV/CVC</span>
+        <input class="field__input" placeholder="***" id="cvc" maxlength="3">
+      </label>
+      <hr />
+    </div>
+    <button class="button" id="button">Payer</button> 
+  </div>
+</div>
+
+
+
+
+<script src="datapage.js"></script>
+<link rel="stylesheet" href="datapage.css">

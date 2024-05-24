@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <title>Fishy</title>
+  <hr />
+  <header class="header">Search Reduction</header>
+
+  <body class="body">
+   
+    <p>Cliquez ici pour rechercher ce produit sur d'autres plate-formes de vente :</p>
+    <hr />
+
+    <button class="button" id="search">Rechercher</button>
+
+    <div class="overlay1" id="overlay1">
+      <div id="title"></div>
+      <div id="author"></div>
+      <img id="image" />
+      <div id="oldPrice"></div>
+      <div id="discountPercentage"></div>
+      <div id="newPrice"></div>
+      <button class="button" id="go">Go</button>
+    </div>
+
+    <div class="overlay1" id="overlay2">
+      <div id="nothing">
+        Nous n'avons pas trouvé de résultat. Cela peut être dû à un problème de
+        serveur. Veuillez rafraîchir la page, puis réessayer.
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay3">
+      <div class="popup" id="popup">
+        <p>Redirection en cours...</p>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay4"></div>
+
+    <script src="popup.js"></script>
+  </body>
+  
+</html>
